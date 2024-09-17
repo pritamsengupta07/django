@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evault</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #4286f4, #6fa1fc);
+            transition: background 0.5s ease-in-out;
+        }
+
+        header {
+            background: linear-gradient(to right, #1a5276, #2874a6);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);m
+            border-bottom: 2px solid #2874a6;
+            transition: background 0.5s ease-in-out;
+        }
+
+        nav {
+            background: linear-gradient(to right, #2874a6, #3498db);
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid #3498db;
+            transition: background 0.5s ease-in-out;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: #4286f4;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+            background: linear-gradient(to right, #ecf0f1, #d4e6f1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin: 20px;
+            transition: background 0.5s ease-in-out;
+        }
+
+        section h2 {
+            color: #333; /* Default color */
+            transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+            transform-origin: center;
+        }
+
+        section:hover h2 {
+            color: #3498db; /* Hover color */
+            transform: rotateX(10deg);
+        }
+
+        footer {
+            background: linear-gradient(to right, #2c3e50, #34495e);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            border-top: 2px solid #34495e;
+            transition: background 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CHAT AI</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="{% url "login" %}">Login</a>
+        <a href="{% url "registration" %}">Registration</a>
+    </nav>
+
+    <section>
+        <h2>Welcome to CHAT AI</h2>
+        <p>ENHANCE YOURSELF WITH AI</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chatai. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+{% comment %} <a href="{% url "login" %}">Login</a>
+        <a href="{% url "registration" %}">Registration</a> {% endcomment %}
